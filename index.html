@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peugeot 508 Bike</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash">
+        <img src="assets/icons/peugeot.png" alt="Peugeot Logo">
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="temperature">
+            <span id="temperature">Loading...</span>
+            <img src="assets/icons/ac_ex.png" alt="AC Warning">
+            <img id="warning" src="assets/icons/ikaz_lambalari/hava_kosulu_yola_cikmak_icin_kotu.jpg" alt="Warning">
+        </div>
+        <div class="status-icons">
+            <img src="assets/icons/veri.png" alt="Data Icon">
+            <img src="assets/icons/bluetooth.png" alt="Bluetooth">
+            <img src="assets/icons/4G.png" alt="4G">
+            <span id="clock">NaN</span>
+        </div>
+    </div>
+
+    <!-- Hız Bilgisi Gösterimi -->
+    <div id="speed-display">
+        <p>Hız: <span id="speed">0</span> km/h</p>
+    </div>
+
+    <!-- Settings Menu -->
+    <div id="settings-menu">
+        <ul>
+            <li>Araç Parametreleri</li>
+        </ul>
+    </div>
+
+    <!-- Radyo Butonu ve Başlık -->
+    <div class="radio-container">
+        <button class="radio-button" onclick="toggleRadio()"></button>
+        <p>Radyo</p>
+    </div>
+
+    <!-- Radio Iframe -->
+    <iframe class="radio-iframe" src="https://music.youtube.com"></iframe>
+    
+    <!-- Message Box -->
+    <div id="message"></div>
+</body>
+</html>
